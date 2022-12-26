@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./pictures/18.ico">
+    <link rel="stylesheet" href="https://www.aurorast.tk/neutrino/index_files/foundation.min.css">
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
     <title>HTS - 软件列表</title>
     <style>
     .button1 {
@@ -22,18 +27,18 @@
         background-color: #139be8;
         color: white;
      }
-     .text1{
+     .text{
         text-align: center;
      }
-    a{
+    .list{
     color: rgb(98, 192, 250);
     text-decoration: none;
     /* cursor: pointer; */
     border-bottom: 1px solid #ecd485;
     font-family:'Microsoft YaHei';
-    font-size: 14px         
+    font-size: 14px;         
      }
-   a:hover{
+   .list:hover{
    color: rgb(137, 112, 201);
    text-decoration: none;
    cursor: pointer;
@@ -41,31 +46,88 @@
    font-family:'Microsoft YaHei';
    font-size: 15px;
    }
+   .back{
+     color:gainsboro;
+     border: none;
+     background-color: white;
+     cursor:pointer;
+   }
+   .back:hover{
+    color:#139be8;
+   }
+   .block{
+    width:90%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 0.5px solid #828282;
+    height: 400px;
+   }
+   .block2{
+    margin-top: 40px;
+    width:90%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 0.5px solid #828282;
+    height:350px;
+   }
+
     </style>
 </head>
-<body>
-    
-    <a href="http://hrotonst.github.io">
-    <button class="button1">回到官网</button>
-    </a>
-    <h2 class="text1">Faster Explorer</h2>
-    <p class="text1">Faster Explorer 是一款基于Trident 7.0内核的浏览器。它拥有及其先进的渲染能力，</p>
-    <p class="text1">能让您的浏览速度翻倍。Faster Explorer，您的网上冲浪利器。</p>
-    <p class="text1">注意：此软件因为没有数字签名，所以下载时可能会报毒。</p>
-    <a href="Faster Explorer beta.exe" download="Faster Explorer.exe">
-        <center><button class ="button1">立即下载</button></center>
-    </a>
-    <h2>&nbsp;</h2>
-    <h2 class="text1">作息大师</h2>
-    <p class ="text1">作息大师是一款时间管理软件。它能够帮您更好的管理时间，让您以更高的效率完成工作、</p>
-    <p class ="text1">学习任务。作息大师，您的时间管理利器。</p>
-    <p class="text1">注意：此软件的安装程序因为没有数字签名，所以下载时可能会报毒。</p>
-    <center><a href="https://www.123pan.com/s/uaASVv-1KqHA">立即下载  1.1.2</a></center>
-    <center><a href="https://www.123pan.com/s/uaASVv-4KqHA">立即下载  1.1.1</a></center>
+    <!-- 初始化 Foundation JS -->
+    <script>
+        $(document).ready(function() {
+          $(document).foundation();
+        })
+        </script>
+
+    <body class="f-topbar-fixed">
+    <div class="fixed">
+    <nav class="top-bar" data-topbar="">
+      <ul class="title-area">
+        <li class="name">
+          <img style = "width:121px;height:16px;"src="./pictures/HTSLOGO.png" alt="HTS图标">
+        </li>
+    </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li><a href="">　HrotonStudio 官网　</a></li>
+          <li class="active"><a href=""> 软件列表</a></li>
+          </ul>
+            </section></nav>
+    </div>
+    <div class="wrapper">
+    <center><div class="block">
+        <h3>&nbsp;</h3>
+        <h2 class="text">Faster Explorer</h2>
+        <p2>&nbsp;</p2>
+        <p class="text">Faster Explorer 是一款基于Trident 7.0内核的浏览器。它拥有及其先进的渲染能力，</p>
+        <p class="text">能让您的浏览速度翻倍。Faster Explorer，您的网上冲浪利器。</p>
+        <p class="text">注意：此软件因为没有数字签名，所以下载时可能会报毒。</p>
+        <p2>&nbsp;</p2>
+        <a href="Faster Explorer beta.exe" download="Faster Explorer.exe">
+            <center><button class ="button1">立即下载</button></center>
+        </a>
+        <h3>&nbsp;</h3>
+    </div></center>
+    <center><div class="block2">
+    <h3>&nbsp;</h3>
+    <h2 class="text">作息大师</h2>
+    <p2>&nbsp;</p2>
+    <p class ="text">作息大师是一款时间管理软件。它能够帮您更好的管理时间，让您以更高的效率完成工作、</p>
+    <p class ="text">学习任务。作息大师，您的时间管理利器。</p>
+    <center><a class="list"href="https://www.123pan.com/s/uaASVv-1KqHA">立即下载  1.1.2</a></center>
+    <center><a class ="list"href="https://www.123pan.com/s/uaASVv-4KqHA">立即下载  1.1.1</a></center>
     <a href="ZXDS_Setup_1.0.0.exe" download="ZXDS_Setup.exe">
-        <center><a>立即下载  1.0.0<a/></center>
+        <center><a class="list">立即下载  1.0.0<a/></center>
     </a>
-
-
+    
+    </center></div>
+    </div>
+    <h2>&nbsp;</h2>
 </body>
 </html>
