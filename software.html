@@ -15,17 +15,18 @@
     .button1 {
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
-        padding: 16px 32px;
+        padding: 10px 32px;
         text-align: center;
-        background-color: white;
-        color: black;
-        border: 2px solid #139be8;
+        background-color: #139be8;
+        color: white;
+        border: none;
         border-radius:5px;
         margin-left: 10px;/*左边距*/
      }
      .button1:hover {
-        background-color: #139be8;
-        color: white;
+        box-shadow:  20px 20px 60px #bebebe,     
+        -20px -20px 60px #ffffff;
+            
      }
      .text{
         text-align: center;
@@ -34,15 +35,13 @@
     color: rgb(98, 192, 250);
     text-decoration: none;
     /* cursor: pointer; */
-    border-bottom: 1px solid #ecd485;
     font-family:'Microsoft YaHei';
     font-size: 14px;         
      }
    .list:hover{
-   color: rgb(137, 112, 201);
+   color: rgb(72, 111, 229);
    text-decoration: none;
    cursor: pointer;
-   border-bottom: 1px solid #ffdf76;
    font-family:'Microsoft YaHei';
    font-size: 15px;
    }
@@ -60,20 +59,27 @@
     box-sizing: border-box;
     margin-top: 30px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    border: 0.5px solid #828282;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid #d6d6d6;
     height: 400px;
+   }
+   .block:hover{
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
    }
    .block2{
     margin-top: 40px;
     width:90%;
     box-sizing: border-box;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    border: 0.5px solid #828282;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid #d6d6d6;
     height:350px;
+   }
+    .block2:hover{
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    }
    }
 
     </style>
@@ -104,11 +110,11 @@
     <center><div class="block">
         <h3>&nbsp;</h3>
         <h2 class="text">Faster Explorer</h2>
-        <p2>&nbsp;</p2>
+        <p4>&nbsp;</p4>
         <p class="text">Faster Explorer 是一款基于Trident 7.0内核的浏览器。它拥有及其先进的渲染能力，</p>
         <p class="text">能让您的浏览速度翻倍。Faster Explorer，您的网上冲浪利器。</p>
         <p class="text">注意：此软件因为没有数字签名，所以下载时可能会报毒。</p>
-        <p2>&nbsp;</p2>
+        <p4>&nbsp;</p4>
         <a href="Faster Explorer beta.exe" download="Faster Explorer.exe">
             <center><button class ="button1">立即下载</button></center>
         </a>
